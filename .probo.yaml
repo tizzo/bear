@@ -5,6 +5,6 @@ steps:
     makeFile: build-bear.make
     runInstall: bear
   - name: Get login link
-    command: 'drush --root=/var/www/html uli'
+    command: 'drush uli'
  #- name: Run behat tests
  #  command: 'cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
