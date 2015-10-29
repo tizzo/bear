@@ -1,3 +1,4 @@
+image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
   - name: Setup Drupal
     plugin: Drupal
