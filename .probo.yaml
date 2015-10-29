@@ -4,7 +4,7 @@ steps:
     plugin: Drupal
     makeFile: build-bear.make
     runInstall: bear
- # - name: Add the bear profile  to the bear build
- #   command: 'rm -rf /var/www/bear/code/profiles/bear ; cp -r $SRC_DIR /var/www/bear/code/profiles/bear'
+  - name: Get login link
+    command: 'drush uli'
  #- name: Run behat tests
  #  command: 'cd /var/www/bear/webroot/profiles/bear/tests ; composer install ; ./bin/behat --profile probo --tags "~@javascript"'
