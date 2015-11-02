@@ -1,9 +1,13 @@
+assets:
+  - database.sql
+  - database.sql.gz
 image: 'proboci/ubuntu-14.04-lamp-beta'
 steps:
   - name: Setup Drupal
     plugin: Drupal
     makeFile: build-bear.make
-    runInstall: bear
+    #runInstall: bear
+    database: database.sql
   - name: Get login link
     command: 'drush uli'
  #- name: Run behat tests
