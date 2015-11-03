@@ -5,6 +5,8 @@ steps:
   - name: Setup Drupal
     plugin: Drupal
     makeFile: build-bear.make
-    database: database.sql
+    #database: database.sql
+    profileName: bear
+    runInstall: true
   - name: Get login link
     command: 'drush uli'
